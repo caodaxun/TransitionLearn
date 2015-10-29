@@ -5,6 +5,8 @@
 
 <u>viewController 转场 <http://objccn.io/issue-5-3/></u>
 
+自定义控制器转场动画及下拉菜单的小Demo <http://wxgbridgeq.github.io/blog/2015/08/10/custom-transition-animation/>
+
 iOS自定义转场详解01 - UIViewControllerTransition的用法 <http://kittenyang.com/uiviewcontrollertransitioning/>
 
 iOS自定义转场详解02 - 实现Keynote中的神奇效果 <http://kittenyang.com/magicmove/>
