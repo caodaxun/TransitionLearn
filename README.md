@@ -68,7 +68,7 @@ iOS自定义转场详解04 - 实现3D翻转效果 <http://kittenyang.com/3dflipt
 
 苹果公司提供了一个新的协议：UIViewControllerAnimatedTransitioning，
 
-我们可以在协议方法中编写自定义的动画代码。苹果开发者文档中称实现了此协议的对象为动画控制器
+我们可以在协议方法中编写自定义的动画代码。苹果开发者文档中称实现了此协议的对象为 动画控制器
 
 由于我们使用了协议这一语法特性，自定义动画的代码可以灵活的放在自己想要的位置。
 
@@ -171,13 +171,17 @@ UINavigationController才会调用interactionController-ForAnimationController
         	// fabs() 求浮点数的绝对值
         	//根据用户手指拖动的距离计算一个百分比，切换的动画效果也随着这个百分比来走
         	CGFloat d = fabs(translation.x / CGRectGetWidth(view.bounds));
+        	
+        	//为目标视图加入手势（或其它交互方式）并调用 updateInteractiveTransition，传入动画时间占整过过程的百分比
         	[self.interactionController updateInteractiveTransition:d];
     	} else if (recognizer.state == UIGestureRecognizerStateEnded) {
         	//根据用户手势的停止状态来判断该操作是结束还是取消
         	//velocityInView 检测手势的速度
         	if ([recognizer velocityInView:view].x < 0) {
+        		//交互完成后调用
             	[self.interactionController finishInteractiveTransition];
         	} else {
+        		//交互取消后调用
             	[self.interactionController cancelInteractiveTransition];
         	}
         	self.interactionController = nil;
