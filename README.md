@@ -72,9 +72,9 @@ iOS自定义转场详解04 - 实现3D翻转效果 <http://kittenyang.com/3dflipt
 
 由于我们使用了协议这一语法特性，自定义动画的代码可以灵活的放在自己想要的位置。
 
-你可以创建一个专门用于管理动画的类， 也可以让UIViewController实现UIViewControllerAnimatedTransitioning接口。
+###### 你可以创建一个专门用于管理动画的类， 也可以让UIViewController实现UIViewControllerAnimatedTransitioning接口。
 
-由于需要实现一系列不同的动画，因此选择为每个动画创建一个类。接下来创建这些动画类的通用父类——BaseAnimation，
+###### 由于需要实现一系列不同的动画，因此选择为每个动画创建一个类。接下来创建这些动画类的通用父类——BaseAnimation，
 
 它定义了一些通用的属性和助手方法
 
@@ -132,13 +132,13 @@ UIModalPresentationCustom。我们还必须将一个符合UIViewControllerTransi
 	modal.modalPresentationStyle = UIModalPresentationCustom; 
 	[self presentViewController:modal animated:YES completion:nil];
 
-如果需要将动画控制器应用到UINavigationController的转场动画中，我们需要使用UINavigationControllerDelegate
+###### 如果需要将动画控制器应用到UINavigationController的转场动画中，我们需要使用UINavigationControllerDelegate
 
-协议中的一个新方法：animationControllerForOperation,返回自定义的动画对象。对于任何自定义的导航转场动画，
+###### 协议中的一个新方法：animationControllerForOperation,返回自定义的动画对象。对于任何自定义的导航转场动画，
 
-导航栏都会有一个淡入淡出的动画过程。同样，对于UITabBarController，使用UITabBarControllerDelegate
+###### 导航栏都会有一个淡入淡出的动画过程。同样，对于UITabBarController，使用UITabBarControllerDelegate
 
-协议的新方法——animationController-ForTransitionFromViewController。
+###### 协议的新方法——animationController-ForTransitionFromViewController。
 
 
 #### 为转场动画定义交互方式
