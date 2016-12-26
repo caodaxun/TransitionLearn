@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5E5-0x-Wh2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5E5-0x-Wh2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="SSa-E6-ACa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qrb-ZB-jUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="Aqi-HY-7oc" customClass="NavigationControllerDelegate">
-                    <connections>
-                        <outlet property="navigationController" destination="5E5-0x-Wh2" id="fPz-FW-k7O"/>
-                    </connections>
-                </customObject>
                 <navigationController id="5E5-0x-Wh2" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGb-aW-0cr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -24,6 +22,12 @@
                         <segue destination="aPs-l8-oCJ" kind="relationship" relationship="rootViewController" id="KSQ-3W-eNX"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrb-ZB-jUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Aqi-HY-7oc" customClass="NavigationControllerDelegate">
+                    <connections>
+                        <outlet property="navigationController" destination="5E5-0x-Wh2" id="fPz-FW-k7O"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-391" y="338"/>
         </scene>
@@ -36,11 +40,11 @@
                         <viewControllerLayoutGuide type="bottom" id="iqY-AH-NPp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aa3-nj-ZOP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Keo-wR-p0n">
-                                <rect key="frame" x="232" y="166" width="137" height="47"/>
+                                <rect key="frame" x="119" y="166" width="137" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="3Yc-tl-xPn"/>
                                     <constraint firstAttribute="width" constant="137" id="r8l-fE-wtd"/>
@@ -51,7 +55,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Keo-wR-p0n" firstAttribute="top" secondItem="eoL-YT-FcJ" secondAttribute="bottom" constant="102" id="8jX-kz-ma2"/>
                             <constraint firstItem="Keo-wR-p0n" firstAttribute="centerX" secondItem="aa3-nj-ZOP" secondAttribute="centerX" id="YMV-WJ-P6o"/>
@@ -72,21 +76,21 @@
                         <viewControllerLayoutGuide type="bottom" id="Ctx-rQ-qrg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sZe-lj-fJH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awy-vh-aKj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awy-vh-aKj">
                                 <rect key="frame" x="203" y="125" width="194" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="9Kq-nK-xJX"/>
                                     <constraint firstAttribute="height" constant="66" id="rHt-oI-omH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="awy-vh-aKj" firstAttribute="top" secondItem="na2-89-Pz5" secondAttribute="bottom" constant="105" id="3FW-wk-D74"/>
                             <constraint firstItem="awy-vh-aKj" firstAttribute="centerX" secondItem="sZe-lj-fJH" secondAttribute="centerX" id="JKV-Fj-M5N"/>
