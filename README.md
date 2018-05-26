@@ -1,6 +1,4 @@
 # TransitionLearn
-转场动画  都还不会 留着慢慢看
-
 <u>iOS7教程系列：自定义导航转场动画以及更多<http://www.cocoachina.com/ios/20131224/7597.html></u>
 
 <u>viewController 转场 <http://objccn.io/issue-5-3/></u>
